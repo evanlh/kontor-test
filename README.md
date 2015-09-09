@@ -6,13 +6,13 @@
 3. Uncomment the last line and C-c C-k (eval the buffer)
 
 ## Method 2
-* Run via Leiningen:
+Run via Leiningen:
 ```
 $ lein run
 ```
 
 ## Method 3
-* Run tests via Leiningen
+Run tests via Leiningen
 ```
 $ lein test
 ````

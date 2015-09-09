@@ -58,7 +58,6 @@
         cart-3 (cart-init)]
     ;; test 1
     (do
-      (reset! cart-1 {:pricing {} :contents []})
       (reset! cart-1 (set-pricing @cart-1 test-pricing))
       (reset! cart-1 (scan @cart-1 test-items-1))
       (my-test (calculate-total @cart-1) 32.40))
@@ -71,7 +70,6 @@
 
     ;; test 3
     (do
-      (reset! cart-3 {:pricing {} :contents []})
       (reset! cart-3 (set-pricing @cart-3 test-pricing))
       (reset! cart-3 (scan @cart-3 test-items-3))
       (my-test (calculate-total @cart-3) 15.40))
